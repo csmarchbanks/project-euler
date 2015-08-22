@@ -7,6 +7,14 @@ import java.util.stream.LongStream;
  * Created by cmarchbanks on 8/22/15.
  */
 public class LongUtils {
+    public static long charToLong(char c){
+        if('0' <= c && c <= '9') {
+            return c - '0';
+        } else {
+            throw new IllegalArgumentException("Character: " + c + " cannot be converted to a number");
+        }
+    }
+
     public static LongPredicate isDivisorOf(long n){
         return i ->  n % i == 0;
     }
