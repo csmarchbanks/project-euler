@@ -16,6 +16,10 @@ public class LongUtils {
                 .noneMatch(isDivisorOf(n));
     }
 
+    public static Long square(long n){
+        return n*n;
+    }
+
     public static boolean isPalindrome(Integer n) {
         return StringUtils.isPalindrome(n.toString());
     }
