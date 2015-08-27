@@ -7,6 +7,10 @@ import java.util.stream.LongStream;
  * Created by cmarchbanks on 8/22/15.
  */
 public class LongUtils {
+    public static double pythag(long a, long b){
+        return Math.sqrt(a*a + b*b);
+    }
+
     public static long charToLong(char c){
         if('0' <= c && c <= '9') {
             return c - '0';
